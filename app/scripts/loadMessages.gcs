@@ -1,0 +1,6 @@
+evaluate []
+create ListBox with LASTRESULT at 150-50
+evaluate {*sys_guest}.setlb(self.page.lb)
+evaluate {*sys_guest}.start()
+print val Thread started!
+end

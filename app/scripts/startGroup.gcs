@@ -1,0 +1,7 @@
+#startPrivate.gcs
+check var *connected
+if 0 then
+	MessageBox Error Please configure as a guest first!
+	end
+load app/screens/groupChat.ch
+end

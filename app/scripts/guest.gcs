@@ -1,0 +1,10 @@
+#host.gcs
+GetInput 3
+SetVar *host LASTRESULT
+GetInput 4
+SetVar *port LASTRESULT
+SetFlag *connected
+execute function gueststart with self.vars.getvar('*host'), self.vars.getvar('*port')
+SetVar *sys_guest LASTRESULT
+MessageBox done! Connected to server!
+end

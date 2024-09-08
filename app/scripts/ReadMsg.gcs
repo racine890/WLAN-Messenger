@@ -1,0 +1,7 @@
+# ReadMsg
+if evaluate({SELECTED} != "") then
+	evaluate "Message from "+{SELECTED}.split(':')[0]=>*text
+	evaluate {*text}+' :\n'+{SELECTED}.split(':')[1][0:-1]=>*text
+	MessageBox msg *text
+	end
+end

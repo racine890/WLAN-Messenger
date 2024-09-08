@@ -1,0 +1,12 @@
+#host.gcs
+GetInput 3
+SetVar *host LASTRESULT
+GetInput 4
+SetVar *port LASTRESULT
+GetInput 5
+SetVar *max_users LASTRESULT
+execute function hoststart with self.vars.getvar('*host'), self.vars.getvar('*port'), self.vars.getvar('*max_users')
+SetVar *sys_server LASTRESULT
+MessageBox Ok Job is starting. Now, Click Ok and set-up the guests
+evaluate {*sys_server}.listen()
+end

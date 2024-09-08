@@ -1,0 +1,6 @@
+#sendGroup.gcs
+GetInput 0
+SetVar *msg LASTRESULT
+# evaluate {*sys_guest}.send_request({*msg})
+execute function request with self.vars.getvar('*sys_guest'), self.vars.getvar('*msg')
+end
