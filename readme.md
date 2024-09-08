@@ -1,17 +1,3 @@
-**********************************************************************************************
-***************************************Readme.txt*********************************************
-
-App: LAN Messenger
-Version: 1
-Autor: James Liliou
-
-***Roles:
-Simple Message Sharing over Network, even local ones.
-
-***Requirements:
-Requires nothing.
-
-***Message:
 How to setup this ?
 1- Start the app; Click "Config"; Click "As a server"; And Click "Ok". That's all for this one.
 2- Get the server ip adress using cmd ( Open The command line and type "ipconfig" to get your ipv4 public adress. ( The bottom one ))
